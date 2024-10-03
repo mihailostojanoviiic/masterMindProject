@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mastermind.css">
+    <title>MasterMind</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="film.html">FILMOVI</a></li>
+                <li><a href="tabela.html">TABELA</a></li>
+                <li><a href="mastermind.html">MasterMind</a></li>
+                <li><a href="index.html"><img src="media/home.png" alt="home" width="50px" height="48px" style="padding-top: 10px;"></a></li>
+            </ul>
+        </div>
+    </nav> <br><br>
+    
+    <section style="margin-top: 93px; text-align: center; padding-top: 10px;">
+        <p style="font-style: oblique; font-size: 18px;"><b>Dobro došli u igru MasterMind!</b> <br>
+            Imate 6 pokušaja da pogodite nasumično izabranu kombinaciju 4 boja od mogućih 6. 
+        </p>
+        <br>
+
+        <!--red 1-->
+        <div class="polje" id="1"></div>
+        <div class="polje" id="2"></div>
+        <div class="polje" id="3"></div>
+        <div class="polje" id="4"></div>
+        <span>&nbsp;&nbsp;&nbsp;</span>
+        <div class="poljePogodak" id="pogodak1"></div>
+        <div class="poljePogodak" id="pogodak2"></div>
+        <div class="poljePogodak" id="pogodak3"></div>
+        <div class="poljePogodak" id="pogodak4"></div>
+
+        <br>
+
+        <!--red 2-->
+        <div class="polje" id="5"></div>
+        <div class="polje" id="6"></div>
+        <div class="polje" id="7"></div>
+        <div class="polje" id="8"></div>
+        <span>&nbsp;&nbsp;&nbsp;</span>
+        <div class="poljePogodak" id="pogodak5"></div>
+        <div class="poljePogodak" id="pogodak6"></div>
+        <div class="poljePogodak" id="pogodak7"></div>
+        <div class="poljePogodak" id="pogodak8"></div>
+
+        <br>
+
+        <!--red 3-->
+        <div class="polje" id="9"></div>
+        <div class="polje" id="10"></div>
+        <div class="polje" id="11"></div>
+        <div class="polje" id="12"></div>
+        <span>&nbsp;&nbsp;&nbsp;</span>
+        <div class="poljePogodak" id="pogodak9"></div>
+        <div class="poljePogodak" id="pogodak10"></div>
+        <div class="poljePogodak" id="pogodak11"></div>
+        <div class="poljePogodak" id="pogodak12"></div>
+
+        <br>
+
+        <!--red 4-->
+        <div class="polje" id="13"></div>
+        <div class="polje" id="14"></div>
+        <div class="polje" id="15"></div>
+        <div class="polje" id="16"></div>
+        <span>&nbsp;&nbsp;&nbsp;</span>
+        <div class="poljePogodak" id="pogodak13"></div>
+        <div class="poljePogodak" id="pogodak14"></div>
+        <div class="poljePogodak" id="pogodak15"></div>
+        <div class="poljePogodak" id="pogodak16"></div>
+
+        <br>
+
+        <!--red 5-->
+        <div class="polje" id="17"></div>
+        <div class="polje" id="18"></div>
+        <div class="polje" id="19"></div>
+        <div class="polje" id="20"></div>
+        <span>&nbsp;&nbsp;&nbsp;</span>
+        <div class="poljePogodak" id="pogodak17"></div>
+        <div class="poljePogodak" id="pogodak18"></div>
+        <div class="poljePogodak" id="pogodak19"></div>
+        <div class="poljePogodak" id="pogodak20"></div>
+
+        <br>
+
+        <!--red 6-->
+        <div class="polje" id="21"></div>
+        <div class="polje" id="22"></div>
+        <div class="polje" id="23"></div>
+        <div class="polje" id="24"></div>
+        <span>&nbsp;&nbsp;&nbsp;</span>
+        <div class="poljePogodak" id="pogodak21"></div>
+        <div class="poljePogodak" id="pogodak22"></div>
+        <div class="poljePogodak" id="pogodak23"></div>
+        <div class="poljePogodak" id="pogodak24"></div>
+
+
+        <!--izbor boja-->
+        <br><br>
+        <div class="poljeBoja" id="boja1" style="background-color: green"></div>
+        <div class="poljeBoja" id="boja2" style="background-color: blue"></div>
+        <div class="poljeBoja" id="boja3" style="background-color: purple"></div>
+        <div class="poljeBoja" id="boja4" style="background-color: pink"></div>
+        <div class="poljeBoja" id="boja5" style="background-color: black"></div>
+        <div class="poljeBoja" id="boja6" style="background-color: white"></div>
+
+
+        <!--dugmici potvrdi, obrisi prethodnu ili resetuj-->
+        <br><br>
+        <button class="dugme" id="potvrdi" onclick="fjaPrihvati()">Potvrdi</button>
+        <button class="dugme" id="obrisi" onclick="fjaObrisi()">Obriši</button>
+        <button class="dugme" id="resetuj" onclick="fjaResetuj()">Resetuj</button>
+
+
+        <!--prikaz kombinacije-->
+        <br><br>
+        <p>Tražena kombinacija: </p>
+        <div class="poljeKomb" id="komb1"></div>
+        <div class="poljeKomb" id="komb2"></div>
+        <div class="poljeKomb" id="komb3"></div>
+        <div class="poljeKomb" id="komb4"></div>
+
+    </section>
+
+<script src="js/zad3.js"></script>
+
+</body>
+</html>

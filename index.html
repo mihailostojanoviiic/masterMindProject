@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SKI || PROJEKAT</title>
+</head>
+<body>
+    <header>
+        <canvas id="ctx" style="border: 2px solid black; background-color: #ddd;"></canvas>
+    </header>
+
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="film.html">FILMOVI</a></li>
+                <li><a href="tabela.html">TABELA</a></li>
+                <li><a href="mastermind.html">MasterMind</a></li>
+            </ul>
+        </div>
+    </nav> <br><br>
+
+    <section class="podaci">
+        <table>
+            <tr><th colspan="3">PODACI</th></tr>
+            <tr>
+                <td>Mihailo Stojanović</td>
+                <td>NRT-15/21</td>
+                <td>Kombinacija 2</td>
+            </tr>
+
+        </table>
+    </section>
+    <section>
+        <p>Popis zadataka - KOMBINACIJA 2:
+            <ul>
+                <li>link ka video sadržaju gde se bira film koji se gleda (normalno ili Fullscreen).</li>
+                <li>link ka stranici koja sadrži tabelu koja ima 5 atributa (kolona) i gde se može vršiti sortiranje redova po bilo kom atributu.</li>
+                <li>link ka igri "MasterMind", igrač pogađa kombinaciju četiri simbola od šest;</li>
+            </ul>
+        </p>
+    </section>
+    <div><p class="poslovice"></p></div>
+    
+    <script>
+            let aktivna = 0;
+                const poslovica = [
+                "Nevolja svačemu čoveka nauči.",
+                "Ako je neko lud, ne budi mu drug.",
+                "U laži su kratke noge.",
+                "Ko svakoga voli, ne voli nikoga.",
+                "Što snaga ne može, pamet učini.",
+                ];
+
+                const smestiPoslovicu = document.getElementsByClassName("poslovice")[0];
+
+                smestiPoslovicu.innerText = poslovica[aktivna];
+
+                setInterval(function () {
+                if (aktivna === poslovica.length - 1) {
+                    aktivna = 0;
+                } else {
+                    aktivna = aktivna + 1;
+                }
+
+                smestiPoslovicu.innerText = poslovica[aktivna];
+                }, 10000);
+    </script>
+
+    <footer>
+        <p>Autor: Mihailo Stojanović NRT-15</p>
+        <a href="mailto:mihailonrt1521@gs.viser.edu.rs">mihailonrt1521@gs.viser.edu.rs</a>
+    </footer>
+    
+    <script>
+        var element=document.getElementById("ctx");
+        ctx=element.getContext('2d')
+        ctx.shadowColor="rgba(0,0,0,0.5)"
+        ctx.shadowOffsetX=4
+        ctx.shadowOffsetY=4
+        ctx.shadowBlur=5
+        ctx.font="bold 30px verdana,sans-serif"
+        ctx.fillText("R E K L A M A",25,100)
+    </script>
+</body>
+</html>

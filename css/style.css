@@ -1,0 +1,118 @@
+body{
+    background-image: url("../media/brickwall.png");
+}
+canvas{
+    position: absolute;
+    left: 1;
+    
+    width: 200px;
+    height: 44px;;
+}
+.navbar{
+    width: 100%;
+    background-color: #ddd;
+}
+ul{
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    line-height: 3em;
+}
+ul li a{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+ul li a:hover{
+    opacity: 20%;
+    transition: 0.2s;
+}
+table{
+    margin: auto;
+    width: 500px;
+    text-align: center;
+}
+table,th,td{
+    border: 1px solid black;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 3px;
+    background-color: darkgrey;
+    color: white;
+}
+.video{
+    display: block;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+}
+.video video{
+    padding: 0 20px;
+}
+.poslovice{
+    text-align: center;
+    font-size: 30px;
+}
+
+.polje{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    margin: 2px; /*razmak izmedju kruzica tj polja*/
+    display: inline-block;
+}
+
+.poljePogodak{
+    width: 22.5px;
+    height: 22.5px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    margin: 2px;
+    display: inline-block;
+    background-color: rgb(204, 204, 204);
+}
+
+.poljeBoja{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 1px;
+    display: inline-block;
+    border: 2px solid gray;
+}
+
+.poljeBoja:hover{
+    cursor: pointer;
+}
+
+.dugme{
+    margin: 5px;
+    font-size: 16px;
+    font-family: Cambria;
+}
+
+.poljeKomb{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    margin: 2px;
+    display: inline-block;
+}
